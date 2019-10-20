@@ -1,7 +1,7 @@
 /*@import 'mobileDesign';*/
 body {
   font-size: 15px;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   color: #4c4e61;
 }
 body p {
@@ -14,7 +14,7 @@ header {
 }
 header h1 {
   font-weight: 200;
-  font-size: 1.93em;
+  font-size: 1.92em;
   margin: 0;
   padding: 0;
 }

@@ -9,7 +9,7 @@ body{
     p{
         color: $neutral_grayishblue;
     }
-    
+
 }
 
 header{
@@ -18,7 +18,7 @@ header{
 
     h1{
         @include font_weight("thin");
-        font-size: 1.93em;
+        font-size: 1.92em;
         margin: 0;
         padding: 0;
     }
