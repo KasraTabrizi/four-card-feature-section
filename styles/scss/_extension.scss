@@ -1,0 +1,22 @@
+$primary_red: hsl(0, 78%, 62%);
+$primary_cyan: hsl(180, 62%, 55%);
+$primary_orange: hsl(34, 97%, 64%);
+$primary_blue: hsl(212, 86%, 64%);
+
+$neutral_verydarkblue: hsl(234, 12%, 34%);
+$neutral_grayishblue: hsl(229, 6%, 66%);
+
+$main_fontsize: 15px;
+$main_fontfamily: Poppins;
+
+@mixin font_weight($weight){
+    @if $weight == 'thin'{
+        font-weight: 200;
+    } 
+    @if $weight == 'regular'{
+        font-weight: 400;
+    } 
+    @if $weight == 'thick'{
+        font-weight: 600;
+    } 
+}

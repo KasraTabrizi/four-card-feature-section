@@ -1,0 +1,108 @@
+@import 'extension';
+
+body{
+    font-size: $main_fontsize;
+    font-family: $main_fontfamily;
+    color: $neutral_verydarkblue;
+
+    p{
+        color: $neutral_grayishblue;
+    }
+}
+
+header{
+    text-align: center;
+    padding: 0 35%;
+
+    h1{
+        @include font_weight("thin");
+        font-size: 1.93em;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2{
+        @include font_weight("thick"); 
+        
+        font-size: 2em;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 2em;
+    column-gap: 2em;
+    justify-content: center;
+    margin: 50px 400px;
+    
+    .box{
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 13px 27px -4px rgba(194,174,194,1);
+        h3{
+            @include font_weight("thick");
+        }
+        
+    }
+
+    article{
+        padding: 25px;
+
+        p{
+            font-size: 0.9em;
+            padding-right: 15px;
+        }
+
+        div{
+            text-align: right;
+            margin-top: 30px;
+        }
+    }
+
+    .item1{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        article{
+            border-top: 4px solid $primary_cyan;
+        }
+    }
+
+    .item2{
+        grid-column: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        article{
+            border-top: 4px solid $primary_red;
+        }
+    }
+
+    .item3{
+        grid-column: 2;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        article{
+            border-top: 4px solid $primary_orange;
+        }
+    }
+
+    .item4{
+        grid-column: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        article{
+            border-top: 4px solid $primary_blue;
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+

@@ -1,0 +1,94 @@
+body {
+  font-size: 15px;
+  font-family: Poppins;
+  color: #4c4e61;
+}
+body p {
+  color: #a3a5ae;
+}
+
+header {
+  text-align: center;
+  padding: 0 35%;
+}
+header h1 {
+  font-weight: 200;
+  font-size: 1.93em;
+  margin: 0;
+  padding: 0;
+}
+header h2 {
+  font-weight: 600;
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 2em;
+  column-gap: 2em;
+  justify-content: center;
+  margin: 50px 400px;
+}
+.container .box {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 13px 27px -4px #c2aec2;
+}
+.container .box h3 {
+  font-weight: 600;
+}
+.container article {
+  padding: 25px;
+}
+.container article p {
+  font-size: 0.9em;
+  padding-right: 15px;
+}
+.container article div {
+  text-align: right;
+  margin-top: 30px;
+}
+.container .item1 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.container .item1 article {
+  border-top: 4px solid #45d3d3;
+}
+.container .item2 {
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.container .item2 article {
+  border-top: 4px solid #ea5353;
+}
+.container .item3 {
+  grid-column: 2;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.container .item3 article {
+  border-top: 4px solid #fcaf4a;
+}
+.container .item4 {
+  grid-column: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.container .item4 article {
+  border-top: 4px solid #549ef2;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
