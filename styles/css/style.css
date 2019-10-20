@@ -1,3 +1,4 @@
+/*@import 'mobileDesign';*/
 body {
   font-size: 15px;
   font-family: Poppins;
@@ -26,12 +27,6 @@ header h2 {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  row-gap: 2em;
-  column-gap: 2em;
-  justify-content: center;
-  margin: 50px 400px;
 }
 .container .box {
   border-radius: 10px;
@@ -52,33 +47,14 @@ header h2 {
   text-align: right;
   margin-top: 30px;
 }
-.container .item1 {
-  grid-row-start: 2;
-  grid-row-end: 4;
-}
 .container .item1 article {
   border-top: 4px solid #45d3d3;
-}
-.container .item2 {
-  grid-column: 2;
-  grid-row-start: 1;
-  grid-row-end: 3;
 }
 .container .item2 article {
   border-top: 4px solid #ea5353;
 }
-.container .item3 {
-  grid-column: 2;
-  grid-row-start: 3;
-  grid-row-end: 5;
-}
 .container .item3 article {
   border-top: 4px solid #fcaf4a;
-}
-.container .item4 {
-  grid-column: 3;
-  grid-row-start: 2;
-  grid-row-end: 4;
 }
 .container .item4 article {
   border-top: 4px solid #549ef2;
@@ -87,8 +63,78 @@ header h2 {
 footer {
   width: 100%;
   text-align: center;
-  position: fixed;
   bottom: 0;
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 2em;
+    column-gap: 2em;
+    justify-content: center;
+    margin: 50px 400px;
+  }
+  .container .item1 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+  .container .item2 {
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .container .item3 {
+    grid-column: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+  .container .item4 {
+    grid-column: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 1400px) {
+  body {
+    font-size: 11px;
+  }
+
+  header {
+    padding: 0;
+    margin: 50px 0;
+  }
+  header h1 {
+    font-weight: 200;
+    font-size: 1.93em;
+    margin: 0;
+    padding: 0;
+  }
+  header h2 {
+    font-weight: 600;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+  }
+  header p {
+    font-size: 1.2em;
+    padding: 0 14%;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 2em;
+    margin-bottom: 200px;
+    margin: 0 25px;
+  }
+  .container article p {
+    font-size: 1em;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
